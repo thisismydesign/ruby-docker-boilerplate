@@ -1,0 +1,11 @@
+services:
+  ruby:
+    build: .
+    image: thisismydesign/ruby-docker-boilerplate:local
+    command: sleep infinity
+    volumes:
+      - bundle_cache:/usr/local/bundle
+      - .:/workspaces/ruby-docker-boilerplate:cached
+
+volumes:
+  bundle_cache:
