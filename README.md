@@ -14,5 +14,5 @@ Docker
 
 ```sh
 docker compose up -d
-docker compose exec bundle gem my-new-gem
+docker compose exec ruby bundle gem my-new-gem
 ```
